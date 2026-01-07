@@ -10,26 +10,8 @@ A React-based job board platform with user authentication, job search, and dashb
 - Company profiles
 - Interview preparation section
 
-## Live Demo
-[Add your deployed link here]
+view the output in the screenshots folder
 
-## Screenshots
-
-### Login Page
-![Login Page](./screenshots/Screenshot-113.png)
-*Clean login interface with email/password authentication*
-
-### User Profile
-![User Profile](./screenshots/Screenshot-118.png)
-*Profile management with editable user information*
-
-### Job Listing
-![Job Listing](./screenshots/Screenshot-124.png)
-*Detailed job view with company info, salary, and requirements*
-
-### Company Profile
-![Company Profile](./screenshots/Screenshot-127.png)
-*Company details page with open positions and reviews*
 
 ## Installation
 
