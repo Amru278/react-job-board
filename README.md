@@ -1,70 +1,110 @@
-# Getting Started with Create React App
+markdown
+# Job Board Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based job board platform with user authentication, job search, and dashboard features.
 
-## Available Scripts
+## Features
+- User authentication (Login/Signup)
+- Job search and filtering
+- Dashboard with saved jobs and applications
+- Company profiles
+- Interview preparation section
 
-In the project directory, you can run:
+## Live Demo
+[Add your deployed link here]
 
-### `npm start`
+## Screenshots
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Login Page
+![Login Page](./screenshots/Screenshot-113.png)
+*Clean login interface with email/password authentication*
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### User Profile
+![User Profile](./screenshots/Screenshot-118.png)
+*Profile management with editable user information*
 
-### `npm test`
+### Job Listing
+![Job Listing](./screenshots/Screenshot-124.png)
+*Detailed job view with company info, salary, and requirements*
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Company Profile
+![Company Profile](./screenshots/Screenshot-127.png)
+*Company details page with open positions and reviews*
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
+```bash
+git clone https://github.com/YOUR_USERNAME/job-board-app.git
+cd job-board-app
+Install dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+bash
+npm install
+Start the development server:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+bash
+npm start
+Open http://localhost:3000 in your browser.
 
-### `npm run eject`
+Technologies Used
+React.js
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+React Router
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+CSS Modules
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Axios (for API calls)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Project Structure
+text
+src/
+├── components/
+│   ├── Auth/         # Login & Signup components
+│   ├── Dashboard/    # Dashboard and sub-components
+│   ├── JobBoard/     # Job search and filters
+│   └── CompanyProfile/
+├── App.jsx           # Main app component
+└── index.js          # Entry point
+Contributing
+Pull requests are welcome. For major changes, please open an issue first.
 
-## Learn More
+License
+MIT
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+text
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## **To upload screenshots to GitHub:**
 
-### Code Splitting
+1. **Create a `screenshots/` folder** in your project root:
+job-board-app/
+├── screenshots/
+│ ├── Screenshot-113.png
+│ ├── Screenshot-118.png
+│ ├── Screenshot-124.png
+│ └── Screenshot-127.png
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+text
 
-### Analyzing the Bundle Size
+2. **Rename files** (optional, for cleaner URLs):
+- `Screenshot (113).png` → `login-page.png`
+- `Screenshot (118).png` → `user-profile.png`
+- `Screenshot (124).png` → `job-listing.png`
+- `Screenshot (127).png` → `company-profile.png`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. **Update README.md references** if you rename files.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4. **Push everything to GitHub:**
+```bash
+git add screenshots/ README.md
+git commit -m "Add application screenshots"
+git push
+Final folder structure for GitHub:
+text
+job-board-app/
+├── screenshots/          # Your 4 screenshots
+├── public/               # Static assets
+├── src/                  # Source code
+├── README.md             # This file
+├── package.json          # Dependencies
+└── .gitignore            # Ignore node_modules, etc.
