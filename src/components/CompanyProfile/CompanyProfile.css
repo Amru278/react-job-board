@@ -1,0 +1,431 @@
+/* src/components/CompanyProfile/CompanyProfile.css */
+.company-profile-container {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #eaeaea;
+}
+
+.company-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  padding-bottom: 25px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.company-logo-section {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.company-logo {
+  font-size: 4rem;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.company-basic-info h1 {
+  margin: 0 0 15px 0;
+  color: #333;
+  font-size: 2.2rem;
+}
+
+.company-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.company-tag {
+  background: #f0f7ff;
+  color: #3b82f6;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.rating-tag {
+  background: #fff7ed;
+  color: #f97316;
+}
+
+.company-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.follow-btn {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.follow-btn:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+.follow-btn.following {
+  background: #10b981;
+}
+
+.website-btn {
+  background: white;
+  color: #3b82f6;
+  border: 2px solid #3b82f6;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s;
+}
+
+.website-btn:hover {
+  background: #f0f7ff;
+  transform: translateY(-2px);
+}
+
+.company-tabs {
+  display: flex;
+  border-bottom: 2px solid #f0f0f0;
+  margin-bottom: 30px;
+  gap: 5px;
+}
+
+.company-tab {
+  background: none;
+  border: none;
+  padding: 15px 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #666;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.company-tab:hover {
+  color: #3b82f6;
+}
+
+.company-tab.active {
+  color: #3b82f6;
+  border-bottom-color: #3b82f6;
+  background: #f0f7ff;
+  border-radius: 8px 8px 0 0;
+}
+
+.company-content {
+  min-height: 300px;
+}
+
+.company-details h3 {
+  margin: 0 0 20px 0;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.company-details p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  font-size: 1.05rem;
+}
+
+.company-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.company-stat {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: transform 0.3s;
+}
+
+.company-stat:hover {
+  transform: translateY(-5px);
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  width: 60px;
+  height: 60px;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stat-content h4 {
+  margin: 0 0 8px 0;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.stat-content p {
+  margin: 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* Jobs Tab */
+.jobs-tab h3 {
+  margin: 0 0 25px 0;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.company-jobs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.company-job-card {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 4px solid #3b82f6;
+  transition: transform 0.3s;
+}
+
+.company-job-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.job-info h4 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.job-meta {
+  display: flex;
+  gap: 20px;
+}
+
+.job-type {
+  background: #dbeafe;
+  color: #1e40af;
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.job-location {
+  color: #666;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.apply-btn {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.apply-btn:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+/* Reviews Tab */
+.rating-summary {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+.overall-rating {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.rating-number {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.rating-stars {
+  font-size: 1.5rem;
+  color: #fbbf24;
+  margin-bottom: 10px;
+}
+
+.rating-count {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.rating-details {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 25px;
+}
+
+.rating-details p {
+  margin: 0 0 15px 0;
+  color: #555;
+  font-size: 1rem;
+  padding-left: 25px;
+  position: relative;
+}
+
+.rating-details p::before {
+  content: "💬";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.add-review-btn {
+  background: white;
+  color: #3b82f6;
+  border: 2px solid #3b82f6;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.add-review-btn:hover {
+  background: #f0f7ff;
+  transform: translateY(-2px);
+}
+
+/* Culture Tab */
+.culture-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.culture-feature {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.culture-feature h4 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.culture-feature p {
+  margin: 0;
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.loading {
+  text-align: center;
+  padding: 60px;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .company-header {
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .company-logo-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .company-tags {
+    justify-content: center;
+  }
+  
+  .company-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .company-tabs {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  }
+  
+  .company-tab {
+    white-space: nowrap;
+    padding: 12px 20px;
+  }
+  
+  .company-stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .company-job-card {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .job-meta {
+    justify-content: center;
+  }
+  
+  .culture-features {
+    grid-template-columns: 1fr;
+  }
+}
